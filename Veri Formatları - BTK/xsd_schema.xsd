@@ -1,0 +1,23 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- ROOT ELEMENT -->
+    <xs:element name="ogrenciler">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ogrenci" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- CHILD ELEMENT -->
+    <xs:element name="ogrenci">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="isim" type="xs:string"/>
+                <xs:element name="Numara" type="xs:integer"/>
+                <xs:element name="Okul" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:integer" use="required"/>
+            <xs:attribute name="sinif" type="xs:string" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

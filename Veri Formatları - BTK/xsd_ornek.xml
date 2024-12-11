@@ -1,0 +1,15 @@
+<?xsd version="1.0" encoding="UTF-8" ?>
+
+<ogrenciler xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="xsd_schema.xsd">
+    <ogrenci id="1">
+        <isim>Orhan</isim>
+        <Numara>12</Numara>
+        <Okul>Mustafa Kemal Atatürk İlkokulu</Okul>
+    </ogrenci>
+    <ogrenci id="39">
+        <isim>Kemal</isim>
+        <Numara>352</Numara>
+        <Okul>Mustafa Kemal Atatürk İlkokulu</Okul>
+    </ogrenci>
+</ogrenciler>

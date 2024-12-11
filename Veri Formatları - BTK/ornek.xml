@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ogrenciler>
+
+    <ogrenci gorev="Okul Başkanı">
+    
+        <ad>Ahmet</ad>
+        <numara>1187</numara>
+        <ortalama>89.98</ortalama>
+        <dogum>2005-11-03</dogum>
+
+    </ogrenci>
+
+     <ogrenci>
+    
+        <ad>Ayse</ad>
+        <numara>924</numara>
+        <ortalama>97.45</ortalama>
+        <dogum>2007-11-03</dogum>
+        <birinci>true</birinci>
+
+    </ogrenci>
+
+      <ogrenci>
+    
+        <ad>Kerem</ad>
+        <numara>87</numara>
+        <ortalama>67.05</ortalama>
+        <dogum>2005-07-09</dogum>
+        <hastaliklar>
+            <hastalik>Astım</hastalik>
+            <hastalik>Diyabet</hastalik>
+
+        
+
+        </hastaliklar>
+
+    </ogrenci>
+
+</ogrenciler>

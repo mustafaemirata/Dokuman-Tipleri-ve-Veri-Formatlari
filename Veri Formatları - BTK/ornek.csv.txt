@@ -1,0 +1,5 @@
+okul;no;isim
+Lise;145;Mustafa
+Ortaokul;152;Arda
+Ortaokul;421;Mehmet
+Üniversiite 991;Kadir

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İzmir Namaz Vakitleri</title>
+
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            border:1px solid gray;
+            padding:7px 15px
+        }
+    </style>
+
+
+
+
+
+</head>
+<body>
+    <h1>İzmir Namaz Vakitleri</h1>
+    <table id="dataTable">
+        <tr>
+            <th>Tarih</th>
+            <th>İmsak</th>
+            <th>Güneş</th>
+            <th>Öğle</th>
+            <th>İkindi</th>
+            <th>Akşam</th>
+            <th>Yatsı</th>
+        </tr>
+    </table>
+    <script>
+        const dataTable = document.getElementById("dataTable");
+
+        fetch("http://ezanvakti.herokuapp.com/vakitler/9272")
+            .then((response) => response.json())
+            .then((jsonData) => {
+                jsonData.forEach((data) => {
+                    let tr = document.createElement("tr");
+                    tr.innerHTML = `
+                        <td>${data.MiladiTarihKisa}</td>
+                        <td>${data.Imsak}</td>
+                        <td>${data.Gunes}</td>
+                        <td>${data.Ogle}</td>
+                        <td>${data.Ikindi}</td>
+                        <td>${data.Aksam}</td>
+                        <td>${data.Yatsi}</td>
+                    `;
+                    dataTable.appendChild(tr);
+                });
+            })
+            .catch((error) => console.error("Hata:", error));
+    </script>
+</body>
+</html>
